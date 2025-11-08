@@ -1,0 +1,33 @@
+{
+  "name": "duneai",
+  "version": "0.1.0",
+  "private": false,
+  "description": "DuneAI client SDK (dune.js) - lightweight adaptive UI script",
+  "main": "dist/index.mjs",
+  "unpkg": "dist/dune.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "echo \"no lint configured\"",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "duneai",
+    "sdk",
+    "dune",
+    "adaptive",
+    "client"
+  ],
+  "author": "DuneAI",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.25.12",
+    "rollup": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^7.2.2",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}
