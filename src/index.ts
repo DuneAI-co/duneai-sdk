@@ -35,7 +35,16 @@ export async function init(opts: DuneOptions) {
   }
 
   // wire tracker to send events to default endpoint
-  initTracker({ siteId: opts.siteId, eventEndpoint: opts.eventEndpoint, debug: opts.debug });
+  //initTracker({ siteId: opts.siteId, eventEndpoint: opts.eventEndpoint, debug: opts.debug });
+
+  const script = document.currentScript as HTMLScriptElement;
+const siteId = script?.dataset.site || 'default';
+const endpoint = script?.dataset.endpoint;
+
+initTracker({
+  siteId,
+  eventEndpoint: endpoint, // 👈 use this if provided
+});
 }
 
 // Auto-init when loaded via <script src="..."> with data-site attribute.

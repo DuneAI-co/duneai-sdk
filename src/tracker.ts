@@ -9,8 +9,7 @@ type TrackerOpts = {
   eventEndpoint?: string | undefined;
   debug?: boolean;
 };
-
-const DEFAULT_EVENT_ENDPOINT = 'https://api.duneai.co/api/event';
+const DEFAULT_EVENT_ENDPOINT = 'http://localhost:3000/api/event';
 const QUEUE_KEY = 'duneai_event_queue_v1';
 let optsGlobal: TrackerOpts | null = null;
 

@@ -18,6 +18,10 @@ export default defineConfig({
       }
     }
   },
+  define: {
+    'process.env.NODE_ENV': JSON.stringify('production'),
+    'process.env': {}, // Fallback for any other accidental uses
+  },
   plugins: [
     dts({ insertTypesEntry: true }) // generate d.ts
   ],
