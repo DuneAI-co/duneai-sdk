@@ -12,7 +12,7 @@ Embed it into any website, and DuneAI will start learning from user interactions
 Add the following snippet to your `<head>`:
 
 ```html
-<script src="https://cdn.duneai.co/dune.js" data-site="YOUR_SITE_ID" async></script>
+<script src="https://cdn.duneai.co/duneai.js" data-site="YOUR_SITE_ID" async></script>
 ```
 
 Or install via npm:
@@ -59,7 +59,7 @@ To build the production bundle:
 ```bash
 npm run build
 ```
-The output (dune.js) will appear in the `/dist` folder.
+The output (duneai.js) will appear in the `/dist` folder.
 
 
 ## Project Structure
@@ -78,7 +78,7 @@ duneai-sdk/
 
 ## Example Integration
 ```html
-<script src="https://cdn.duneai.co/dune.js" data-site="demo" async></script>
+<script src="https://cdn.duneai.co/duneai.js" data-site="demo" async></script>
 
 <div data-morph="hero-text">
   Welcome to our store!

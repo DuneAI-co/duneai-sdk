@@ -2,9 +2,9 @@
   "name": "duneai",
   "version": "0.1.0",
   "private": false,
-  "description": "DuneAI client SDK (dune.js) - lightweight adaptive UI script",
+  "description": "DuneAI client SDK (duneai.js) - lightweight adaptive UI script",
   "main": "dist/index.mjs",
-  "unpkg": "dist/dune.js",
+  "unpkg": "dist/duneai.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {

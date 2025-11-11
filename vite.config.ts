@@ -8,7 +8,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'DuneAI',
       formats: ['es', 'iife'],
-      fileName: (format) => (format === 'iife' ? 'dune.js' : 'index.mjs')
+      fileName: (format) => (format === 'iife' ? 'duneai.js' : 'index.mjs')
     },
     rollupOptions: {
       // externalize deps here if you add runtime deps later
